@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir pendaftaran</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <legend>
+        <h1>formulir pendaftaran</h1>
+      </legend>
+    </header>
+    <fieldset>
+      <section>
+        <form>
+          <label for="name">name</label>
+          <input type="text" name="name" id="name" />
+          <br />
+          <label for="email">email</label>
+          <input type="text" id="email" name="email" />
+          <br />
+          <label for="phone">No.HP</label>
+          <input type="text" name="phone" id="phone" />
+          <br />
+        </form>
+      </section>
+      <form>
+        <label for="date">bulan lahir</label>
+        <input type="date" name="date" id="date" />
+      </form>
+    </fieldset>
+    <br />
+    ,
+    <fieldset>
+      <form>
+        kelamin: <br />
+
+        <input type="radio" name="gender" id="pria" value="pria" />
+        <label for="pria">pria</label>
+        <br />
+        <input type="radio" name="gender" id="cwek" value="wanita" />
+        <label for="wanita">wanita</label>
+        <br />
+        <input type="radio" name="gender" id="tidak ada" value="tidak ada" />
+        <label for="tidak ada">tidak ada</label>
+      </form>
+      <br />
+
+      <label for="kota-type">Provinsi:</label>
+      <select id="kota-type" name="kota-type">
+        <option value="jakarta">Jakarta</option>
+        <option value="surabaya">Surabaya</option>
+        <option value="jogja">Jogja</option>
+        <option value="solo">Solo</option>
+        <option value="semarang">Semarang</option>
+        <option value="bekasi">bekasi</option>
+        <option value="semarang">gresik</option>
+        <option value="cikarang">cikarang</option>
+        <option value="bogor">bogor</option>
+      </select>
+      <br />
+
+      <form>
+        hobby: <br />
+
+        <input type="checkbox" name="hobby" id="football" value="football" />
+        <label for="football">football</label>
+        <br />
+        <input type="checkbox" name="hobby" id="padel" value="padel" />
+        <label for="padel">padel</label>
+        <br />
+        <input type="checkbox" name="hobby" id="tennis" value="tennis" />
+        <label for="tennis">tennis</label>
+      </form>
+      <br />
+      <form>
+        <label for="deskripsi">biodata singkat:</label>
+        <textarea
+          name="deskriprisi"
+          id="deskriprisi"
+          cols="50"
+          placeholder="isi dekskripsi disini"
+          rows="10"
+        >
+    ini isi teks nya</textarea
+        >
+        <label for="cat-photo">unggah foto</label>
+        <input type="file" id="photo" name="photo" accept="image/*" />
+        <input type="submit" value="simpan" />
+      </form>
+    </fieldset>
+
+    <footer>
+      <p>
+        saya menyetuji :
+        <a href="#">syarat ketentuan</a>
+        yg berlaku
+      </p>
+    </footer>
+  </body>
+</html>
